@@ -1,0 +1,188 @@
+/*  Fonts  */
+@font-face {
+    font-family: 'Folio Bk BT';
+    src: url('../css/folio-book-bt/folio-bk-bt-book.ttf') format('truetype');    
+    font-weight: normal;
+    font-style: normal; 
+}
+ 
+ 
+@font-face {
+    font-family: 'folio-lt-bt-light';
+    src: url('../css/folio-light-bt/folio-lt-bt-light.ttf') format('truetype');    
+    font-weight: normal;
+    font-style: normal; 
+}
+
+.clearfix{
+    zoom:1;
+}
+.container{
+    width: 100%;    
+}
+.wrapper{
+    width: 96%;
+    max-width: 1300px;
+    min-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*  topbar  */
+
+header .base_topo{
+    width: 100%;
+    min-width: 1024px;
+    float:left;        
+    background-color: rgb(84, 197, 208);
+    height: 30px;
+}
+
+header .base_topo ul{
+    list-style: none;    
+        
+}
+
+header .base_topo ul li{
+    float: left;     
+    margin-top: 5px;  
+}
+header .base_topo ul li:last-child{
+    margin-right: 0;     
+}
+
+header .base_topo ul li a i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.compartilhe{
+    float: right;   
+    position:relative;
+    margin-right: 10px;
+}
+
+.compartilhe ul li{
+     margin-right: 5px;
+}
+
+.compartilhe ul li.compartilhe_nas_redes_sociais{
+    font-size: 12px;
+    font-family: "Folio Bk BT";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    margin-top: 9px;
+
+}
+
+
+.compartilhe .mais {
+  border-radius: 50%;
+  background-color: rgb(51, 51, 51);  
+  width: 20px;
+  height: 20px;
+}
+
+.compartilhe ._{  
+    text-decoration: none;
+    color: rgb(84, 197, 208);
+    position:relative;
+    top:2px;
+    left:5.5px;
+}
+
+.compartilhe a:hover .mais{  
+    background-color: rgb(255, 255, 255);   
+}
+
+.compartilhe .facebook{
+    background: url('../media/img/facebook.png') no-repeat;
+}
+
+.compartilhe a:hover .facebook{
+    background: url('../media/img/facebook-hover.png') no-repeat;
+}
+.compartilhe .twitter{
+    background: url('../media/img/twitter.png') no-repeat;
+}
+
+.compartilhe a:hover .twitter{
+    background: url('../media/img/twitter-hover.png') no-repeat;
+}
+
+
+.lingua{
+    float: right;    
+    position:relative;
+    margin-left: 10px;
+
+}
+
+.lingua a{
+     padding: 11px 5px 2px 5px; 
+}
+
+.lingua .brasil{
+    background: url('../media/img/brasil.png') no-repeat;
+}
+
+.lingua .usa{
+    background: url('../media/img/usa.png') no-repeat;
+}
+
+.lingua a:hover{
+    background-color: rgb(40, 120, 128);
+     padding: 11px 5px 2px 5px; 
+}
+
+/*menu*/
+header .menu {
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    min-width: 1024px;
+    float:left;        
+    height: 78px;
+    box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.45);
+}
+header .menu nav{
+    float: right;
+     
+}
+header .menu ul{
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+header .menu nav ul li{     
+    display: inline-block;  
+    float: left;    
+    border-right: 1px solid;
+    border-right-color: rgb(35, 31, 29);
+    border-left: 1px solid;
+    border-left-color: rgb(62, 62, 62);        
+}
+header .menu nav ul li:last-child {
+    border-right: none;
+}
+
+header .menu nav ul li:first-child {
+    border-left: none;
+}
+
+header .menu nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Folio Bk BT";
+    color: rgb(255, 255, 255);
+    padding-top: 31px;
+    padding-bottom: 31px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+header .menu nav ul li:last-child a {
+    padding-right: 0;
+}

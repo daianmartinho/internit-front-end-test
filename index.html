@@ -29,17 +29,17 @@
         <!-- topbar -->  
         
             <div class="base_topo">            
-               <div class="wrapper clearfix">
+               <div class="wrapper ">
                 <div class="lingua">
                     <ul>
                         <li>
                             <a href="#">
-                                <i class="brasil"></i>
+                                <span id="brasil"></span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="usa"></i>
+                                <span id="usa"></span>
                             </a>
                         </li>
                     </ul>
@@ -50,12 +50,12 @@
                         <li class="compartilhe_nas_redes_sociais">Compartilhe nas redes sociais:</li>
                         <li>
                             <a href="#">
-                                <i class="facebook"></i>
+                                <span class="facebook"></span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="twitter"></i>
+                                <span class="twitter"></span>
                             </a>
                         </li>
                         <li class="mais">
@@ -70,14 +70,19 @@
 
         <!-- Main Menu -->
         <div class="menu">
-            <div class="wrapper clearfix">
+            <div class="wrapper ">
                 <nav>
                     <ul>
                         <li>
                             <a href="#">Quem Somos</a>
                         </li>
-                        <li>
-                            <a href="#">Soluções</a>
+                        <li class="dropdown">                            
+                            <a class="dropbtn" href="#">Soluções</a>
+                            <div class="dropdown-content">                                
+                                <a href="#">Consultoria</a>
+                                <a href="#">Representação</a>
+                                <a href="#">Projetos Especiais</a>                               
+                            </div>
                         </li>
                         <li>
                             <a href="#">Clientes e Parceiros</a>
@@ -91,6 +96,19 @@
                     </ul>
                 </nav>
             </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="wrapper  container logo">
+                <span id="logo-base-1"></span>
+                <span id="logo-base-1-borda"></span>
+                <span id="logo-base-1-clear"></span>
+                <span id="logo-base-2"></span>
+                <span id="logo-base-2-clear"></span>                 
+                <a href="#" title="Return to the homepage" id="logo">               
+                    <img src="media/img/logo.png" alt="Petrosol logo" />
+                </a>
+                <span id="sombra-logo"></span>
         </div>
        
     </header><!-- end header --> 

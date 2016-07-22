@@ -15,9 +15,6 @@
 }
 
 
-.container{
-    width: 100%;    
-}
 .wrapper{
     width: 1024px;
     margin: 0 auto;
@@ -84,7 +81,7 @@ header .base_topo ul li a span{
     text-decoration: none;
     color: rgb(84, 197, 208);
     position:relative;
-    top:2.5px;
+    top:2px;
     left:0.5px;
 }
 
@@ -99,6 +96,7 @@ a._{
 
 .compartilhe .facebook{
     background: url('../media/img/facebook.png') no-repeat;
+    color: transparent;
 }
 
 .compartilhe a:hover .facebook{
@@ -106,6 +104,7 @@ a._{
 }
 .compartilhe .twitter{
     background: url('../media/img/twitter.png') no-repeat;
+    color: transparent;
 }
 
 .compartilhe a:hover .twitter{
@@ -151,8 +150,7 @@ header .menu {
     min-width: 1024px;
     float:left;        
     height: 78px;
-    z-index: -1;
-    box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.45);
+    z-index: 82;
     border-bottom: 2px ridge;
     border-bottom-color: rgb(69, 69, 69);
 }
@@ -235,6 +233,20 @@ header .menu nav ul li:last-child a {
 /*altera cor da letra ao passar o mouse pelos links*/
 .dropdown-content a:hover, header .menu nav ul li a:hover, .dropdown:hover .dropbtn {color: rgb(84, 197, 208);}
 
+/* sombra do menu */
+header .menu:after{
+    content: "";
+    position: absolute;
+    top: 78px;
+    bottom: 0;
+    background: rgb(51,51,51);
+    min-width: 1024px;
+    box-shadow: 0px 12px 8px 0px rgba(0,0,0,0.45);
+    width: 100%;
+    height: 20px;
+    transform: rotate(0.7deg);
+    z-index: -1;
+}
 
 
 /**
@@ -263,7 +275,7 @@ a.dropbtn:hover{
 
 /*LOGO*/
 
-.container .logo{
+.logo{
     position: relative;
 }
 
@@ -275,7 +287,7 @@ a.dropbtn:hover{
     left:-100px;
     width: 513px;
     height: 178px;
-    z-index: 2;
+    z-index: 220;
 }
 
 #logo-base-1-borda{ 
@@ -286,7 +298,7 @@ a.dropbtn:hover{
     left:-105px;
     width: 521px;
     height: 184px;
-    z-index: -2;
+    z-index: 221;
 }
 #logo-base-1-clear {
   background-color: rgb(51,51,51);
@@ -336,5 +348,52 @@ a.dropbtn:hover{
     left: 66px;
     top: 20px;
     z-index: 226;
+}
+
+/* Banner */
+
+.banner{
+    width: 100%;    
+}
+
+.banner-wrapper{
+    width: 100%;
+    height: 667px;
+    overflow-x: hidden;
+    position: relative;
+}
+#banner-base{
+    background-image: url("../media/img/banner-base.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left:50%;
+    top: -110px;
+    margin-left: -990px;
+    width: 1980px;
+    height: 648px;
+    z-index: -2;
+}
+
+#banner-borda{
+    background-image: url("../media/img/banner-borda.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left:50%;
+    top: -93px;
+    margin-left: -898px;
+    width: 1888px;
+    height: 649px;
+    z-index: -3;
+}
+#banner-sombra{
+    background-image: url("../media/img/banner-sombra.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left:50%;
+    top: -109px;
+    margin-left: -990px;
+    width: 1980px;
+    height: 667px;
+    z-index: -4;
 }
 

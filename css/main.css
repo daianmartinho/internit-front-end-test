@@ -361,41 +361,73 @@ a.dropbtn:hover{
 .banner-wrapper{
     width: 100%;
     height: 667px;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
 }
-#banner-base{
-    background-image: url("../media/img/banner-base.png");
-    background-repeat: no-repeat;
+.banner-base{   
+    -webkit-mask-image: url("../media/img/banner-base.png");
+  	mask-image: url("../media/img/banner-base.png");
+  	-webkit-mask-repeat: no-repeat;
+  	mask-repeat: no-repeat;
     position: absolute;
     left:50%;
-    top: -110px;
-    margin-left: -990px;
+    top: -15px;
+    margin-left: -1082px;
     width: 1980px;
     height: 648px;
-    z-index: -2;
+    z-index: -8;   
 }
 
-#banner-borda{
+.banner-borda{
     background-image: url("../media/img/banner-borda.png");
     background-repeat: no-repeat;
     position: absolute;
     left:50%;
-    top: -93px;
+    top: 15px;
     margin-left: -898px;
-    width: 1888px;
-    height: 649px;
-    z-index: -3;
+    width: 1980px;
+    height: 667px;
+    z-index: -9;
 }
-#banner-sombra{
+.banner-sombra{
     background-image: url("../media/img/banner-sombra.png");
     background-repeat: no-repeat;
     position: absolute;
     left:50%;
-    top: -109px;
-    margin-left: -990px;
+    top: -110px;
+    margin-left: -960px;
     width: 1980px;
     height: 667px;
-    z-index: -4;
+    z-index: -10;
 }
+
+.grade{
+	background-image: url("../media/img/grade.png");    
+    position: absolute;
+    z-index: 999999999999999;
+    height: 100%;
+    width: 100%;
+
+    /*left:50%;
+    top: 0px;
+    margin-left: -982px;
+    width: 1980px;
+    height: 648px;*/
+}
+
+/* posicionando de forma relativa ao pai ".banner-base", e um float:left para que as imagens fiquem uma do lado da outra*/
+#slides .slide{
+    position: relative;
+    width: 100%;
+    float: left;
+    z-index: -7;
+}
+
+/* para ter certeza de que a imagem do slide será exibida em tela cheia */
+#slides .slide img{
+    width: 100%;
+    height: auto;   
+    
+}
+
 

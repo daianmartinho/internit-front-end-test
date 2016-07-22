@@ -209,15 +209,17 @@ header .menu nav ul li:last-child a {
     background-color: rgb(51, 51, 51);
     min-width: 178px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 84;
 }
 
 /*insere o acabamento do dropdown*/
 .dropdown-content:after{
     position: absolute;
     z-index: -1;
-    top:65%;
+    top:66.5%;
     content: url('../media/img/borda-dropdown.png');
     background-repeat: no-repeat;
+
 }
 
 /*mostra dropdown ao passar o mouse pelo menu*/
@@ -284,7 +286,7 @@ a.dropbtn:hover{
     background-repeat: no-repeat;
     position: absolute;
     top:60px;
-    left:-100px;
+    left:-104px;
     width: 513px;
     height: 178px;
     z-index: 220;
@@ -295,7 +297,7 @@ a.dropbtn:hover{
     background-repeat: no-repeat;
     position: absolute;
     top:60px;
-    left:-105px;
+    left:-109px;
     width: 521px;
     height: 184px;
     z-index: 221;
